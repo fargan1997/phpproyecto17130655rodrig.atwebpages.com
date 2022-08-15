@@ -1,0 +1,222 @@
+@charset "UTF-8";
+@import url(font-awesome.min.css);
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
+
+nav {
+    border-color: rgb(216, 216, 216); 
+    border-style: solid; 
+    border-width: 1px;
+    height: 55px;
+    align-content: center;
+}
+
+div.menu {
+    align-items: center;
+    display: flex;
+    height: 77px;
+    justify-content: center;
+    width: 100%;
+}
+
+div.buscar {
+    width: 500px;
+    align-content: center;
+    align-self: center;
+    align-items: center;
+    margin: 20%;
+}
+
+input.buscar {
+    border-color: rgb(216, 216, 216);
+    border-style: solid;
+    border-width: 1px;
+    font-size: 13px;
+    width: 400px;
+    height: 27px;
+    text-align: center;
+    background-color: rgb(247, 247, 247);
+    align-self: center;
+}
+
+div.center {
+    align-self: center;
+}
+
+ul.bar {
+    display: inline;
+    padding-left:3px;
+    padding-right:3px
+}
+
+.icon {
+    width: 22px;
+    height: 22px;
+    margin: 10px;
+}
+
+.logo {
+    width: 77pt; 
+    height: auto; 
+    margin: 0em; 
+    padding: 0em;
+}
+
+.darkbar {
+    background-color: black;
+}
+
+h2.dbar {
+    color: rgb(148, 148, 148);
+}
+
+.bannerMau {
+    background-color: #8a4680;
+    color: #e2d1df;
+    padding: 8em 0;
+    position: relative;
+}
+    .bannerMau a {
+        color: #ffffff;
+    }
+
+    .bannerMau h1, .bannerMau h2, .bannerMau h3, .bannerMau h4, .bannerMau h5, .bannerMau h6 {
+        color: #ffffff;
+    }
+    
+    .bannerMau hr {
+        border-bottom-color: rgba(255, 255, 255, 0.25);
+    }
+
+    .bannerMau.full {
+        padding: 0;
+        min-height: 100vh;
+        height: 100vh !important;
+    }
+
+    .bannerMau.half {
+        padding: 0;
+        min-height: 50vh;
+        height: 50vh !important;
+    }
+
+    .bannerMau:after {
+        background: #000000;
+        content: '';
+        display: block;
+        height: 100%;
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        visibility: hidden;
+        width: 100%;
+        z-index: 2;
+    }
+
+    .bannerMau > article {
+        -moz-transition: opacity 1.5s ease, visibility 1.5s;
+        -webkit-transition: opacity 1.5s ease, visibility 1.5s;
+        -ms-transition: opacity 1.5s ease, visibility 1.5s;
+        transition: opacity 1.5s ease, visibility 1.5s;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        text-align: center;
+        top: 0;
+        visibility: hidden;
+        width: 100%;
+        z-index: 0;
+    }
+
+        .bannerMau > article:before {
+            content: '';
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+        }
+
+        .bannerMau > article:after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: #000;
+            opacity: 0.35;
+        }
+
+        .bannerMau > article .inner {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            z-index: 1;
+        }
+
+            .bannerMau > article .inner > :last-child {
+                margin-bottom: 0;
+            }
+
+        .bannerMau > article h2 {
+            font-size: 7rem;
+            margin-bottom: 0;
+            color: #FFF;
+            font-weight: 300;
+        }
+
+            .bannerMau > article h2:after {
+                display: none;
+            }
+
+        .bannerMau > article p {
+            color: rgba(255, 255, 255, 0.65);
+            text-transform: uppercase;
+            font-size: 1rem;
+            font-weight: 300;
+            margin: 0;
+            padding-bottom: 1.75rem;
+            letter-spacing: .25rem;
+        }
+
+            .bannerMau > article p:after {
+                content: '';
+                position: absolute;
+                margin: auto;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                width: 50%;
+                height: 1px;
+                background-color: rgba(255, 255, 255, 0.65);
+            }
+
+        .bannerMau > article a {
+            color: #FFF;
+            text-decoration: none;
+        }
+
+        .bannerMau > article img {
+            display: none;
+        }
+
+        .bannerMau > article.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .bannerMau > article.top {
+            z-index: 1;
+        }
+
+        .bannerMau > article.instant {
+            -moz-transition: none !important;
+            -webkit-transition: none !important;
+            -ms-transition: none !important;
+            transition: none !important;
+        }
